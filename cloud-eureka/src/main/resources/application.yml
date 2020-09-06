@@ -1,0 +1,50 @@
+server:
+  port: 7900
+spring:
+  application:
+    name: eureka
+#  profiles:
+#    active: peer3
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+#      defaultZone: http://localhost:7902/eureka/,http://localhost:7902/eureka/,http://localhost:7903/eureka/
+      defaultZone: http://localhost:7900/eureka/
+  server:
+    enable-self-preservation: false  #自我保护
+    renewal-percent-threshold: 0.85 #阈值
+    eviction-interval-timer-in-ms: 1000 #剔除 快速下线
+    use-read-only-response-cache: false #多级缓存
+    response-cache-update-interval-ms: 1000 #数据同步时间
+#---
+#spring:
+#  profiles: peer1
+#eureka:
+#  instance:
+#    hostname: localhost
+#    appname: euk1
+#server:
+#  port: 7901
+#---
+#spring:
+#  profiles: peer2
+#eureka:
+#  instance:
+#    hostname: localhost
+#    appname: euk2
+#server:
+#  port: 7902
+#---
+#spring:
+#  profiles: peer3
+#eureka:
+#  instance:
+#    hostname: localhost
+#    appname: euk3
+#server:
+
+#  port: 7903

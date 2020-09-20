@@ -1,4 +1,4 @@
-package com.apipassenger.apipassenger;
+package com.apipassenger;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

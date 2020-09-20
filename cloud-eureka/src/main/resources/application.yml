@@ -14,12 +14,12 @@ eureka:
     service-url:
 #      defaultZone: http://localhost:7902/eureka/,http://localhost:7902/eureka/,http://localhost:7903/eureka/
       defaultZone: http://localhost:7900/eureka/
-  server:
-    enable-self-preservation: false  #自我保护
-    renewal-percent-threshold: 0.85 #阈值
-    eviction-interval-timer-in-ms: 1000 #剔除 快速下线
-    use-read-only-response-cache: false #多级缓存
-    response-cache-update-interval-ms: 1000 #数据同步时间
+#  server:
+#    enable-self-preservation: false  #自我保护
+#    renewal-percent-threshold: 0.85 #阈值
+#    eviction-interval-timer-in-ms: 1000 #剔除 快速下线
+#    use-read-only-response-cache: false #多级缓存,关闭从readOnly读注册表
+#    response-cache-update-interval-ms: 1000 #数据同步时间 readwrite 和readonly 读取间隔时间
 #---
 #spring:
 #  profiles: peer1

@@ -1,9 +1,9 @@
-server:
-  port: 8082
+spring:
+  application:
+    name: consumer-1
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7900/eureka/
-spring:
-  application:
-    name: api-passenger
+server:
+  port: 81

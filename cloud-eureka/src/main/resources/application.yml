@@ -24,8 +24,9 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-#      defaultZone: http://localhost:7902/eureka/,http://localhost:7902/eureka/,http://localhost:7903/eureka/
+
       defaultZone: http://localhost:7900/eureka/
+#     defaultZone: http://localhost:7902/eureka/,http://localhost:7902/eureka/,http://localhost:7903/eureka/    //三台以上集群配置
 #  server:
 #    enable-self-preservation: false  #自我保护
 #    renewal-percent-threshold: 0.85 #阈值

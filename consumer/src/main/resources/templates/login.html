@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <form action="/login" method="post">
+            用户名：<input name="xx" type="text"/><br>
+            密码： <input name="oo" type="password"/>
+            <br>
+            <!-- 特别难看出来 刷新了三次 -->
+<!--            验证码<input name="code" type="text"/> <img src="http://localhost/kaptcha">-->
+
+            <input  th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+
+            <br>
+            <button type="submit" >登录</button>
+        </form>
+</body>
+</html>

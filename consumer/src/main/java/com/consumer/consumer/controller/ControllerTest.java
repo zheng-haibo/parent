@@ -5,6 +5,7 @@ import com.consumer.consumer.service.ServiceTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -21,10 +22,9 @@ public class ControllerTest {
         return serviceTest.send();
     }
 
-    @GetMapping("hello")
+    @GetMapping("/hello")
     public String initGet(){
         return "hello" + port;
     }
-
 
 }

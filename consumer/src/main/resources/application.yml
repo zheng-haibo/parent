@@ -5,6 +5,10 @@ spring:
     admin:
       client:
         url: http://localhost:8080
+  security:
+    user:
+      name: root
+      password: root
 management:
   endpoints:
     web:

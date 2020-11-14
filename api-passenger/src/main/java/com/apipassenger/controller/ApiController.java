@@ -13,6 +13,7 @@ public class ApiController {
 
     @GetMapping("/hello")
     public String index(){
+        System.out.println("开始调用了");
         return "ApiPassenger" + "-" + port;
     }
 
